@@ -49,18 +49,21 @@ const MODELOS = [
     recamaras: "1 recámara",
     m2: "51 m²",
     descripcion: "Sala, comedor, cocina, área de lavado, medio baño de visitas y recámara con baño vestidor.",
+    planta: "/plantas/modelo-a.jpg",
   },
   {
     nombre: "Modelo B1",
     recamaras: "2 recámaras",
     m2: "80 m²",
     descripcion: "Sala, comedor, cocina, área de lavado, baño, recámara principal con baño vestidor y recámara secundaria.",
+    planta: "/plantas/modelo-b1.jpg",
   },
   {
     nombre: "Modelo B2",
     recamaras: "2 recámaras",
     m2: "62 m²",
     descripcion: "Sala, comedor, cocina, área de lavado, medio baño, recámara principal con baño y recámara flex.",
+    planta: "/plantas/modelo-b2.jpg",
   },
 ];
 
@@ -276,6 +279,9 @@ export default function CovaliaPage() {
           <div className="grid md:grid-cols-3 gap-6">
             {MODELOS.map((m) => (
               <div key={m.nombre} className="bg-white rounded-xl2 overflow-hidden flex flex-col">
+                <div className="relative aspect-[6/5] bg-gray-50">
+                  <Image src={m.planta} alt={`Planta arquitectónica del ${m.nombre}`} fill className="object-contain p-2" />
+                </div>
                 <div className="p-7 flex flex-col flex-1">
                   <h3 className="font-serif text-xl font-bold text-covalia-green">{m.nombre}</h3>
                   <div className="flex items-center gap-4 mt-3 text-sm text-gray-500">
