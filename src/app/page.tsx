@@ -422,7 +422,7 @@ export default function CovaliaPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-8">
             <div>
-              <span className="font-serif text-2xl text-white">Covalia</span>
+              <Image src="/logo/covalia-logo.png" alt="Covalia" width={160} height={56} className="h-9 w-auto" />
               <p className="text-white/50 text-sm mt-4 max-w-xs">Temozón Norte, Mérida, Yucatán.</p>
               <div className="mt-6">
                 <p className="text-white/40 text-xs uppercase tracking-wide mb-2">Un proyecto de:</p>

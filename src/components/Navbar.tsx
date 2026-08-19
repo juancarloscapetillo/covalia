@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 
 const LINKS = [
@@ -20,9 +21,14 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           <a href="#top" className="flex items-center gap-2 flex-shrink-0">
-            <span className="font-serif text-2xl lg:text-3xl text-white tracking-tight">
-              Covalia
-            </span>
+            <Image
+              src="/logo/covalia-logo.png"
+              alt="Covalia"
+              width={160}
+              height={56}
+              className="h-9 lg:h-10 w-auto"
+              priority
+            />
           </a>
 
           <nav className="hidden lg:flex items-center gap-8">
