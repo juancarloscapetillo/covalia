@@ -124,7 +124,7 @@ export default function CovaliaPage() {
           className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-covalia-green via-covalia-green/60 to-covalia-green/20" />
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 lg:pb-24 w-full">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16 lg:pt-0 lg:pb-24 w-full">
           <p className="text-covalia-ochre text-sm font-semibold tracking-[0.2em] uppercase mb-4">
             Temozón Norte · Mérida, Yucatán
           </p>
