@@ -115,7 +115,7 @@ export default function CovaliaPage() {
       <Navbar />
 
       {/* HERO */}
-      <section className="relative h-[92vh] min-h-[640px] flex items-end">
+      <section className="relative min-h-[92vh] flex items-end">
         <Image
           src="/renders/hero-acceso.jpg"
           alt="Acceso principal de Covalia en Temozón Norte, Mérida"
